@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fetch con PHP</title>
+</head>
+<body>
+  <h1>Consulta al servidor</h1>
+  <button onclick="consultarServidor()">Consultar</button>
+
+  <pre id="resultado"></pre>
+
+  <script>
+    function consultarServidor() {
+      fetch('http://localhost/php_projects/my-server/server.php') // Paso 2
+        .then(response => response.json())   // Paso 4
+        .then(data => {
+          document.getElementById('resultado').textContent = JSON.stringify(data, null, 2);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+  </script>
+</body>
+</html>
