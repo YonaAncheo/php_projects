@@ -1,0 +1,19 @@
+In this page, I want to create a mini to do list.
+
+What I need to?
+A to do list have an id, text, user id, status(complete, pending, canceled)
+For the structure it need a textfield, a label for id, a combobox for the status and a button for delete 
+  1 'This is an example' Status: 'Completed'(combobox). [delete]
+
+For create a new task, I need a label, a text field and two buttons.
+Introduce a task |'example: I wash the dishes'| [create][delete]
+
+What happen when...?
+
+button [create] => then create a new structure in the page "X 'This is an example' Status: 'Completed'(combobox). [delete]"
+Introduce button [delete] => delete the text in the main textfield
+
+task button [delete] => delete this structure
+
+
+
