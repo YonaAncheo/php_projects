@@ -27,7 +27,7 @@
   }
   $total /= $count;
   $output['html'] .= '</ul>';
-  $input['media'] = $total;
+  $output['media'] = $total;
   $output['html'] .= '<h3>RESULTADO: ' . htmlspecialchars($total) . '</h3>'; 
 
   echo json_encode($output);
